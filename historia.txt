@@ -8,3 +8,25 @@ Creador de Blentoom company
 Mis hobbies son el basquetball y platzi
 
 todavia estoy practicando pero entiendo lo basico y freddy explica genial
+
+
+En este momento github te anuncia que tienes commit atrasados y te da la opcion de hacer pull request pero lo haremos desde consola.
+
+Vas al proyecto del usuario1 y copia el link y en consola hacemos lo siguiente
+
+git remote add upstream https://github.com/JesusSanchez23/heperblog.git
+
+
+upstream es un nombnre que s ele suele colocar a este tipo de actualizaciones,
+
+git remote -v 
+
+Te permite ver las nuevas fuentes de datos, teniendo esta nueva rama hacemos pull con nuetsra master.
+
+git pull upstream master
+
+Esto nos permite tener actualizado nuetro reposositorio local y ahopra tenemos que mandar los cambias al repositorio remoto donde tenemos el fork
+
+git push origin master
+
+Basicamente hay que entenderlo asi, para no pedir un pull request con el comando git remote add upstream (url del repositorio del usuario1) puedes jalar todas las actualizaciones, despues con el comando git pull upstream master actualizas tu repositorio local y ahora solo tienes que hacer un push a tu fork para actualizarlo.
